@@ -3,8 +3,9 @@ header( 'content-type: text/html; charset=utf-8' );
 ini_set('display_errors', '1');
 error_reporting(-1);
 set_time_limit(0);
+$fileconf = "conf.php";
 
-$conf = include( dirname(__FILE__)."/conf.php" );
+$conf = include( dirname(__FILE__)."/".$fileconf );
 include( dirname(dirname(__FILE__))."/Teinte/Build.php" );
 
 ?>
@@ -18,6 +19,12 @@ include( dirname(dirname(__FILE__))."/Teinte/Build.php" );
   <body>
     <div id="center">
       <h1><a href="pull.php">Administration</a>, <a href="." target="_blank"><?= $conf['title'] ?></a></h1>
+      <?php
+if ( !isset($conf['pass']) || !$conf['pass'] ) {
+  echo '<h1>Erreur de configuration à l’installation, pas de mot de passe trouvé dans le fichier '.$fileconf.'</h1>';
+  exit();
+}
+       ?>
       <form method="POST">
         <label>Mot de passe
           <input name="pass" type="password"/>
