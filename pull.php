@@ -49,7 +49,6 @@ include( dirname(dirname(__FILE__))."/Teinte/Build.php" );
     $build->glob( );
     echo '</pre>'."\n";
   }
-
       ?>
       </section>
     </div>

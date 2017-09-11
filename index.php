@@ -79,7 +79,6 @@ else {
   echo'
 <form action="">
   <input style="width: 100%;" name="q" class="text" placeholder="Rechercher de mots" value="'.str_replace( '"', '&quot;', $base->p['q'] ).'"/>
-  <div><label>De <input placeholder="année" name="start" class="year" value="'.$base->p['start'].'"/></label> <label>à <input class="year" placeholder="année" name="end" value="'.$base->p['end'].'"/></label></div>
   <button type="reset" onclick="return Form.reset(this.form)">Effacer</button>
   <button type="submit" style="float: right; ">Rechercher</button>
 </form>
@@ -100,12 +99,11 @@ if ( $doc ) {
   else echo $html;
 }
 else if ( $base->search ) {
-  $base->biblio( array( "no", "date", "author", "title", "occs" ), "SEARCH" );
+  $base->biblio( array( "no", "date", "title", "occs" ), "SEARCH" );
 }
 // pas de livre demandé, montrer un rapport général
 else {
-  readfile('accueil.html');
-  $base->biblio( array( "date", "author", "title" ) );
+  $base->biblio( array( "date", "title" ) );
 }
             ?>
             <a id="gotop" href="#top">▲</a>
