@@ -35,7 +35,7 @@ include( dirname(dirname(__FILE__))."/Teinte/Build.php" );
   }
   else {
     $getcwd = getcwd();
-    chdir( $conf['srcdir']  );
+    chdir( $conf['srcdir'] );
     echo 'Mise à jour distante <pre>'."\n";
     // $last = exec( $conf['cmdup'], $output, $ret);
     // echo implode( "\n", $output);
