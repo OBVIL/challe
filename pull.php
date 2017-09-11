@@ -30,7 +30,7 @@ include( dirname(dirname(__FILE__))."/Teinte/Build.php" );
       <section>
       <?php
   if ( !isset( $_POST['pass'] ));
-  else if ( $_POST['pass'] != $conf['pass'] ) {
+  else if ( !isset($conf['pass']) || !$conf['pass'] || $_POST['pass'] != $conf['pass'] ) {
     echo "Mauvais mot de passe";
   }
   else {
