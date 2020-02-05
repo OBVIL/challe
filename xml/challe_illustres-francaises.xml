@@ -6,9 +6,9 @@
     <fileDesc>
       <titleStmt>
         <title>Les illustres Françaises</title>
-        <author key="Challe, Robert (1659-1721)">Robert Challe</author>
-        <editor key="Artigas-Menant, Geneviève">Geneviève Artigas-Menant</editor>
-        <editor>Delphine Petit</editor>
+        <author key="Challe, Robert (1659-1721)" ref="https://data.bnf.fr/fr/11895910/robert_challe/">Robert Challe</author>
+        <editor key="Artigas-Menant, Geneviève" ref="https://data.bnf.fr/fr/11915529/genevieve_artigas-menant/">Geneviève Artigas-Menant</editor>
+        <editor key="Petit, Delphine">Delphine Petit</editor>
       </titleStmt>
       <publicationStmt>
         <publisher>Université Paris-Sorbonne, LABEX OBVIL</publisher>
