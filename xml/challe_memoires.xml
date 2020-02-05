@@ -49,7 +49,8 @@
         </availability>
       </publicationStmt>
       <sourceDesc>
-        <bibl/>
+        <!-- Se baser sur: https://catalogue.bnf.fr/ark:/12148/cb35844145g ? -->
+        <bibl><author>Robert Challe</author>, <title>Mémoires</title></bibl>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
