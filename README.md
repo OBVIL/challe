@@ -64,7 +64,7 @@ remplacer null par une chaîne entre guillemets<br/>
 Aller voir votre site dans un navigateur, ex:
 <br/>http://obvil.paris-sorbonne.fr/corpus/challe
 <br/>Si aucun texte apparaît, c’est normal, vous êtes invité à visiter la page d’administration
-<br/>http://obvil.paris-sorbonne.fr/corpus/challe/pull.php
+<br/>https://obvil.sorbonne-universite.fr/corpus/challe/pull.php
 
 
 ## Erreurs rencontrées
