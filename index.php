@@ -47,13 +47,13 @@ echo $conf['title'];
             echo '<a href="'.$basehref.'">'.$conf['title'].'</a>';
           }
           else if ( !$path ) {
-            echo '<a href="//obvil.paris-sorbonne.fr/projets/edition-digitale-et-etude-de-la-polemique-autour-de-gongora">OBVIL, '.$conf['title'].'</a>';
+            echo '<a href="https://obvil.sorbonne-universite.fr/projets/challe">OBVIL, '.$conf['title'].'</a>';
           }
           else {
             echo '<a href="'.$basehref.'?'.$_COOKIE['lastsearch'].'">'.$conf['title'].'</a>';
           }
         ?></h1>
-        <a class="logo" href="http://obvil.paris-sorbonne.fr/"><img class="logo" src="<?php echo $basehref; ?>../theme/img/logo-obvil.png" alt="OBVIL"></a>
+        <a class="logo" href="https://obvil.sorbonne-universite.fr/"><img class="logo" src="<?php echo $basehref; ?>../theme/img/logo-obvil.png" alt="OBVIL"></a>
       </header>
       <div id="contenu">
         <aside id="aside">
